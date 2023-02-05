@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Rabar;
+  src: url(../CSS/Fonts/Rabar_021.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Rabar;
+  src: url(../CSS/Fonts/Rabar_022.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+body {
+  margin: 0;
+  background-color: #f4fffd;
+}
+
+/*Navbar*/
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.navbar .container {
+  background-color: #b5f8ca;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Rabar;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navbar .container img {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+  display: flex;
+}
+
+.navbar .container ul {
+  display: flex;
+  gap: 50px;
+}
+.navbar .container ul li {
+  list-style: none;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.navbar .container ul li a {
+  color: #424b54;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar .container ul li a:hover {
+  color: #4fb0c6;
+  border-bottom: 3px solid #4fb0c6;
+  padding-bottom: 3px;
+  list-style: none;
+  border-radius: 3px;
+}
+
+.button {
+  text-decoration: none;
+  margin-right: 20px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #12c64b;
+  color: #f0f4ef;
+}
+
+.button:hover {
+
+  background-color: #4fc694;
+
+}
+
+/*Main*/
+
+.content {
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rabar;
+  font-style: normal;
+  gap: 80px;
+}
+
+
+.slogan {
+  width: 700px;
+  color: #424b54;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: Rabar;
+  line-height: 130%;
+}
+
+.description {
+  width: 700px;
+  color: #424b54;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: Rabar;
+  line-height: 150%;
+}
+
+.content img {
+  display: flex;
+}
+
+.approach {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #4fb0c607;
+}
+
+.approach .approachCards {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+
+.approach .card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  font-family: Rabar;
+}
+
+
+.approach .card h2 {
+  color: #56c97a;
+  font-size: 18px;
+  line-height: 15px;
+}
+.approach .card p {
+  color: #424b54;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .container ul {
+    display: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
